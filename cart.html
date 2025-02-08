@@ -1,0 +1,129 @@
+<html>
+<head>
+<link rel="stylesheet" href="main_style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+       $("#signupbtn,#confirm").click(function(){
+          alert("Are you sure?");
+        });
+       $("#apply").click(function(){
+          alert("Are you sure to apply the coupon?");
+        });
+   });
+</script>
+
+</head>
+<body>
+
+<div id="header">
+     <a href="#"><img src="logo1.png" width=70px class="logo"></a>
+     <div>
+        <ul id="navbar">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class ="active" href="cart.html"><img src="cart_1.png"></a></li>
+            
+        </ul>
+     </div> 
+   </div>
+
+<div id="about-header">
+  
+  <h2>#cart</h2>
+  <p>Add your coupon code & SAVE upto 70%!</p>
+  
+</div>
+<br>
+<div id="cart">
+  <table width="100%">
+     <thead>
+        <tr>
+           <td>Remove</td>
+           <td>Image</td>
+           <td>Product</td>
+           <td>Price</td>
+           <td>Quantity</td>
+           <td>Subtotal</td>
+        </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><i class="far fa-times-circle">X</i></td>
+         <td><img src="f1.jpg" alt=""></td>
+         <td>Cartoon Astronaut T-shirt</td>
+         <td>Rs.7999</td>
+         <td><input type="number" value="1"></td>
+         <td>Rs.7999</td>
+      </tr>
+      <tr>
+         <td><i class="far fa-times-circle">X</i></td>
+         <td><img src="f2.jpg" alt=""></td>
+         <td>Cartoon Astronaut T-shirt</td>
+         <td>Rs.7999</td>
+         <td><input type="number" value="1"></td>
+         <td>Rs.7999</td>
+      </tr>
+      <tr>
+         <td><i class="far fa-times-circle">X</i></td>
+         <td><img src="f3.jpg" alt=""></td>
+         <td>Cartoon Astronaut T-shirt</td>
+         <td>Rs.7999</td>
+         <td><input type="number" value="1"></td>
+         <td>Rs.7999</td>
+      </tr>
+
+     </tbody>
+  </table>
+</div>
+
+<div id="cart-add">
+       <div id="coupon">
+         <h3>APPLY COUPON</h3>
+         <div>
+            <input type="text" name="coupon" placeholder="COUPON CODE" required>
+            <button type="submit" id="apply"  class="btn btn-info">Apply</button>
+         </div>
+       </div>
+       <div id="Subtotal">
+         <h3>Cart total</h3>
+         <table>
+            <tr>
+               <td>cart Subtotal</td>
+                  <td>Rs.23,997</td>
+            </tr>
+            <tr>
+               <td>shipping</td>
+               <td>free</td>
+            </tr>
+            <tr>
+               <td><strong>total</strong></td>
+               <td><strong>Rs.23,997</strong></td>
+            </tr>
+         </table>
+         <button type="submit" id="confirm"  class="btn btn-info"><a href="bill.html">Confirm</a></button>
+       </div>
+</div>
+
+
+
+
+<div id="signup">
+  <div class="signuptext">
+     <h2><b>Leave a message for us!</b></h2>
+     <p>Give your feedback here and get <b>special offers</b>.</p>
+  </div>
+  <form>
+    
+     <input type="email" placeholder="Hey! Users.">
+     <button type="submit" id="signupbtn" class="btn btn-primary">Send</button>
+  </form>
+</div>
+</body>
+</html>

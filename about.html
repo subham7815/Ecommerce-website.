@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" href="main_style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+       $("#signupbtn").click(function(){
+          alert("Are you sure?");
+        });
+   });
+</script>
+
+</head>
+<body>
+
+<div id="header">
+     <a href="#"><img src="logo1.png" width=70px class="logo"></a>
+     <div>
+        <ul id="navbar">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class ="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><img src="cart_1.png"></a></li>
+            
+        </ul>
+     </div> 
+   </div>
+
+<div id="about-header">
+  
+  <h2>#KnowUs</h2>
+  <p>Dear users, meet our team members!</p>
+  
+</div>
+
+<div id="about-head">
+  <img src="a6.jpg">
+    <div>
+       <h2>Who Are We?</h2>
+       <p id="aboutpara">We are the students of Sikhsha 'O' Anushandhan(ITER) pursuing Btech in CSE and we are from 2nd year,SEC-14.We have designed this website under the guidance of our CSW professor Mr. Abhaya Grahari.There are total 5 members who have designed this ecommerce platform as a project.The name of the members are: Biswajit Sahu, TD Propil Kumar, Soubhagya Nayak, Subranshu Subhankar Nayak & Subham Kumar Nayak.We have completed this website within 6-7 days. All have done a great job and gave equalefforts to make this possible.</p>
+<br>
+<h4>To know more about us, please contact us!</h4>
+    </div>
+</div>
+
+
+<div id="signup">
+  <div class="signuptext">
+     <h2><b>Leave a message for us!</b></h2>
+     <p>Give your feedback here and get <b>special offers</b>.</p>
+  </div>
+  <form>
+    
+     <input type="email" placeholder="Hey! Users.">
+     <button type="submit" id="signupbtn" class="btn btn-primary">Send</button>
+  </form>
+</div>
+
+</body>
+</html>
