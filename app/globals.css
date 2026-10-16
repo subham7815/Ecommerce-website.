@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #e8fdf7;
+  --color-brand-100: #d1f8eb;
+  --color-brand-200: #a3f1d4;
+  --color-brand-500: #0f766e;
+  --color-brand-600: #0b5d5c;
+  --color-brand-700: #0a3d45;
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.15)), url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80');
+  background-position: center;
+  background-size: cover;
+}
