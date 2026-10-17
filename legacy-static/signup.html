@@ -1,0 +1,145 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="assets/css/main_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                alert("Are you sure?");
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("assets/images/banner.png");
+            background-size: cover;
+        }
+        
+        label {
+            color: white;
+        }
+        
+        .wrapper {
+            height: 9vh;
+            /*This part is important for centering*/
+            display: grid;
+            place-items: center;
+        }
+        
+        .typing-demo {
+            width: 12ch;
+            animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+        
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+        
+        input[type="radio"] {
+            color: white;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #04aa6d;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        .imgcontainer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100px;
+            height: auto;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="typing-demo">
+            Sign of Here!!
+        </div>
+    </div>
+
+
+    <form action="main.html">
+        <div class="imgcontainer">
+            <img width=80px src="assets/images/logo1.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Email" name="email" required>
+
+            <label for="mob"><b>Mobile Number</b></label>
+            <input type="text" placeholder="Mobile Number" name="mob" required>
+            <br />
+
+
+            <label for="country" class="form-label"><b>Country</b></label>
+            <select class="form-select" id="country" required> 
+  
+ <option>United States</option>
+<option>India</option>
+<option>Africa</option> 
+ </select>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+
+</html>
